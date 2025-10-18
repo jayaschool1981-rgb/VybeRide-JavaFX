@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.vyberide.controllers.SignupController"
+            prefHeight="350.0" prefWidth="400.0">
+
+    <children>
+        <VBox alignment="CENTER" spacing="10" layoutX="100" layoutY="40" prefWidth="200" AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100">
+            <Label text="Create Account" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+            <TextField fx:id="nameField" promptText="Full Name"/>
+            <TextField fx:id="emailField" promptText="Email"/>
+            <PasswordField fx:id="passwordField" promptText="Password"/>
+
+            <Button text="Sign Up" onAction="#handleSignup" style="-fx-background-color: #3B82F6; -fx-text-fill: white;"/>
+            <Hyperlink text="Already have an account? Login" onAction="#goToLogin"/>
+
+            <Label fx:id="statusLabel" textFill="red"/>
+        </VBox>
+    </children>
+</AnchorPane>

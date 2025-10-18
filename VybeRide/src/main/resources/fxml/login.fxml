@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.vyberide.controllers.LoginController"
+            prefHeight="300.0" prefWidth="400.0">
+
+    <children>
+        <VBox alignment="CENTER" spacing="10" layoutX="100" layoutY="60" prefWidth="200">
+            <Label text="Vybe Ride" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+            <TextField fx:id="emailField" promptText="Email"/>
+            <PasswordField fx:id="passwordField" promptText="Password"/>
+            <Button text="Login" onAction="#handleLogin" style="-fx-background-color: #3B82F6; -fx-text-fill: white;"/>
+            <Hyperlink text="Don't have an account? Sign up" onAction="#goToSignup"/>
+            <Label fx:id="errorLabel" textFill="red"/>
+        </VBox>
+    </children>
+</AnchorPane>
