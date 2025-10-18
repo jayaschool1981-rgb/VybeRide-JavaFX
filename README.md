@@ -55,4 +55,103 @@ The project demonstrates a strong foundation in JavaFX UI development, database 
 ---
 
 ## 🏗️ Project Structure
+VybeRide-JavaFX/
+│
+├── VybeRide/
+│ ├── src/main/java/com/vyberide/
+│ │ ├── controllers/
+│ │ │ ├── LoginController.java
+│ │ │ └── SignupController.java
+│ │ ├── database/
+│ │ │ └── DatabaseConnection.java
+│ │ ├── Main.java
+│ │ └── Launcher.java
+│ │
+│ ├── src/main/resources/
+│ │ └── fxml/
+│ │ ├── login.fxml
+│ │ └── signup.fxml
+│ │
+│ └── pom.xml
+│
+├── VybeRide.sql
+└── README.md
+
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Prerequisites
+- Java **17 or higher**
+- MySQL Server installed
+- IntelliJ IDEA (recommended)
+- Maven plugin configured
+
+### 2️⃣ Clone the Repository
+```bash
+git clone https://github.com/jayaschool1981-rgb/VybeRide-JavaFX.git
+
+
+
+
+3️⃣ Set Up Database
+
+Open MySQL Workbench or CLI
+
+Run the SQL script:
+
+source VybeRide.sql;
+Update credentials in DatabaseConnection.java:
+private static final String USER = "root";
+private static final String PASSWORD = "your_password_here";
+4️⃣ Run the Application
+
+In IntelliJ, right-click Launcher.java → Run
+
+📸 Preview
+Login Screen	Signup Screen
+
+	🧩 Future Improvements
+
+Add ride booking dashboard
+
+Implement password hashing (bcrypt)
+
+Add CRUD operations for ride data
+
+Integrate maps API for route simulation
+
+👨‍💻 Author
+
+Om Barvekar
+🎓 Computer Science Student | 💻 Java & Full-Stack Developer
+🌐 GitHub
+ • LinkedIn
+ • Instagram
+
+🪪 License
+
+This project is licensed under the MIT License — you are free to modify and distribute with attribution.
+
+⭐ If you like this project, consider giving it a star on GitHub!
+
+
+
+---
+
+## ✅ What this README includes:
+- Beautifully formatted **header and badges**
+- Full **project overview**
+- Clear **setup instructions**
+- Table of **features & tech stack**
+- Future roadmap
+- Social links + license  
+
+---
+
+Would you like me to **generate a GitHub banner image (cover art)** for your README (something like “🚗 Vybe Ride | JavaFX Ride-Sharing App” with modern gradient)?  
+It will appear on top and make your repo instantly eye-catching.
 
